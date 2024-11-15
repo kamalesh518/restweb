@@ -1,5 +1,4 @@
-# Ex.06 Restaurant Website
-## Date:
+# Ex.07 Restaurant Website
 
 ## AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
@@ -28,223 +27,93 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM:
-### HTML
-```HTML
-Name: SAJITH AHAMED F
-Reg.No:212223240144
-
-
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Lemon</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Little Lemon Restaurant</title>
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <!-- Updated to show only the image -->
-            <img src="logo.png" alt="Little Lemon Logo">
+<body style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif; margin: 0; padding: 0; background-color: #dbe4f0; color: #333;">
+
+    
+    <header style="background-color: #eeff00; color: #0d0101; padding: 10px; text-align: center; display: flex; align-items: center; justify-content: space-between; height: 85px;">
+        <img src="LOGO.png" alt="Little Lemon Restaurant Logo" style="max-width: 60px; height: auto; margin-left: 10px;">
+        <div style="flex-grow: 1; text-align: center;">
+            <h1 style="margin: 0; font-size: 2.5rem;">LITTLE LEMON RESTAURANT</h1> 
+            <p style="margin: 0; font-size: 1rem;">Fine Dining & Excellent Cuisine</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Book</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Promotional Banner -->
-        <section class="promo-banner">
-            <h2>50% Off This Weekend</h2>
-            <p>Eat well, be active, feel good about yourself.</p>
-        </section>
+    <section style="padding: 20px; text-align: center;">
+        <h2 style="font-size: 2rem;">About Us</h2>
+        <p>Welcome to Little Lemon Restaurant, where culinary delights meet a cozy ambiance. We serve the finest ingredients, beautifully crafted into dishes that inspire.</p>
+    </section>
 
-        <!-- Content Columns -->
-        <section class="content-columns">
-            <article class="column">
-                <h3>Our New Menu</h3>
-                <img src="tandoori.jpeg" alt="New Menu">
-                <p>Crispy Honey Garlic Chicken</p>
-                <a href="#">See our new menu</a>
-            </article>
+    <section style="padding: 20px; text-align: center;">
+        <h2 style="font-size: 2rem;">Our Menu</h2>
+        <div style="display: flex; justify-content: space-around; flex-wrap: nowrap; max-width: 900px; margin: auto;">
+            
+            <div style="width: 250px; padding: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin: 10px;">
+                <h3>Tasting Menu 1</h3>
+                <p>Starter: Lemon Bruschetta</p>
+                <img src="lemonbru.png" alt="Lemon Bruschetta" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p>Main: Seared Salmon</p>
+                <img src="seared_salmon.png" alt="Seared Salmon" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p>Dessert: Lemon Tart</p>
+                <img src="lemon tart.png" alt="Lemon Tart" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p style="margin-top: 20px; font-size: 0.8rem; color: #666;">*Allergens: gluten, seafood</p>
+            </div>
 
-            <article class="column">
-                <h3>Book a Table</h3>
-                <img src="saalad.jpeg" alt="Book a Table">
-                <p>Salade Niçoise</p>
-                <a href="#">Book your table now</a>
-            </article>
+            <div style="width: 250px; padding: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin: 10px;">
+                <h3>Tasting Menu 2</h3>
+                <p>Starter: Caesar Salad</p>
+                <img src="caesarsalad.png" alt="Caesar Salad" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p>Main: Ribeye Steak</p>
+                <img src="ribeye.png" alt="Ribeye Steak" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p>Dessert: Chocolate Mousse</p>
+                <img src="Chocolate_mouse.png" alt="Chocolate Mousse" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p style="margin-top: 20px; font-size: 0.8rem; color: #666;">*Allergens: dairy, eggs</p>
+            </div>
 
-            <article class="column">
-                <h3>Opening Hours</h3>
-                <img src="chef.jpg" alt="Opening Hours">
-                <p>Each day offers a fresh and delicious option!</p>
-                <p>Monday - Friday: 2pm - 10pm<br>Saturday: 2pm - 11pm<br>Sunday: 2pm - 9pm</p>
-            </article>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-logo">
-            <img src="logo-small.png" alt="Little Lemon Logo">
+            <div style="width: 250px; padding: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin: 10px;">
+                <h3>Tasting Menu 3</h3>
+                <p>Starter: Stuffed Mushrooms</p>
+                <img src="SuffedMushroom.png" alt="Stuffed Mushrooms" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p>Main: Grilled Chicken</p>
+                <img src="grilled chicken.png" alt="Grilled Chicken" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p>Dessert: Cheesecake</p>
+                <img src="lemoncheesecake.png" alt="Cheesecake" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
+                <p style="margin-top: 20px; font-size: 0.8rem; color: #666;">*Allergens: dairy, nuts</p>
+            </div>
         </div>
-        <div class="footer-text">
-            <p>© 2024 Little Lemon</p>
-        </div>
+    </section>
+
+    <section style="padding: 40px; text-align: center; background-color: #f1f1f1;">
+        <h2>Contact Us</h2>
+        <p>Address: Little Lemon, 19/20 Royal Hibernian Way, Duke Lane Upper, Dublin 2 Dublin 2, Dublin, D02 K772, Ireland</p>
+        <p>Phone: (312) 938-7229</p>
+        <p>Email: hello@littlelemon.com</p>
+        <p>Open Hours: 06:00 pm - 10:00 pm</p>
+    </section>
+
+    <footer style="background-color: #d2f703; color: #120202; text-align: center; padding: 10px;">
+        <p>&copy; 2024 Little Lemon Restaurant. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
 ```
-### CSS
-
-```CSS
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-header, footer {
-    background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 20px;
-}
-
-.logo img {
-    max-width: 450px; 
-    height: auto;
-}
 
 
-nav {
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px; 
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    flex: none; 
-}
-
-nav a {
-    display: block;
-    text-decoration: none;
-    color: #fff; 
-    padding: 10px 20px;
-    text-align: center;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #333;
-}
-
-header {
-    width: 100%;
-}
-
-main {
-    padding: 20px;
-}
-
-.promo-banner {
-    background: url("dash.jpg") center/cover no-repeat;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.content-columns {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    background-color: #ffcd7c;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.column img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.column h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-.column a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #0066cc;
-    transition: color 0.3s;
-}
-
-.column a:hover {
-    color: #004d99;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.footer-logo img {
-    width: 30px;
-}
-
-.footer-text {
-    display: flex;
-    align-items: center;
-    color: #777;
-}
-```
 ## OUTPUT:
-![1](https://github.com/user-attachments/assets/d93f7494-444c-4238-9ec9-9deb3f38a9ff)
 
+![image](https://github.com/user-attachments/assets/8d66115f-7e19-4f32-a88f-ec591645b266)
 
-![2](https://github.com/user-attachments/assets/5cefaebf-e902-4b67-b29b-37119ebdca25)
+![image](https://github.com/user-attachments/assets/ec849b92-1b40-4dba-a437-5d1933f2ffbf)
 
+![image](https://github.com/user-attachments/assets/634d6415-c7da-47d2-8123-8ac9fff418f2)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
