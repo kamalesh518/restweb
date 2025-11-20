@@ -1,7 +1,8 @@
-# Ex.07 Restaurant Website
+# Ex.07 Restuarant Website
+## Date:20/11/2025
 
 ## AIM:
-To develop a static Restaurant website to display the food items and services provided by them.
+To develop a static Resturant website to display the menu and services provided by the resturant.
 
 ## DESIGN STEPS:
 
@@ -28,92 +29,390 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 ```
-<!DOCTYPE html>
+Home.html
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Lemon Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lovely Moon — Home</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif; margin: 0; padding: 0; background-color: #dbe4f0; color: #333;">
 
-    
-    <header style="background-color: #eeff00; color: #0d0101; padding: 10px; text-align: center; display: flex; align-items: center; justify-content: space-between; height: 85px;">
-        <img src="LOGO.png" alt="Little Lemon Restaurant Logo" style="max-width: 60px; height: auto; margin-left: 10px;">
-        <div style="flex-grow: 1; text-align: center;">
-            <h1 style="margin: 0; font-size: 2.5rem;">LITTLE LEMON RESTAURANT</h1> 
-            <p style="margin: 0; font-size: 1rem;">Fine Dining & Excellent Cuisine</p>
+<body>
+  <header class="nav">
+    <div class="wrap inner">
+      <div class="brand">Lovely</div>
+      <nav class="links">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="rest.jpg" alt="Restaurant Banner">
+    <div class="overlay"></div>
+    <div class="content">
+      <span class="badge">Since 1998</span>
+      <h1>Crafted Flavors, Warm Hospitality</h1>
+      <p class="subtitle">Seasonal ingredients with wood-fired classics.</p>
+      <a class="btn primary" href="menu.html">Explore Menu</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap grid3">
+      <div class="card"><h3>Wood-Fired Ovens</h3><p>Perfect char & chewy crusts.</p></div>
+      <div class="card"><h3>Local Produce</h3><p>Fresh & seasonal.</p></div>
+      <div class="card"><h3>Cozy Atmosphere</h3><p>Soft lighting & warm vibes.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© 2025 Lovely Moon — Designed by <strong>Parani Bala M</strong></div>
+  </footer>
+</body>
+</html>
+
+Menu.html
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lovely Moon — Menu</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="wrap inner">
+            <div class="brand">Lovely Moon</div>
+            <nav class="links">
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="#">Administration</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="wrap section">
+        <h2 class="section-title">Menu</h2>
+        <section class="menu-grid">
+            <article class="item">
+                <img src="pizza.jpg" alt="Margherita Pizza">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Margherita Pizza</div>
+                        <div class="price">₹699</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="bbqc.jpg" alt="BBQ Chicken">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">BBQ Chicken</div>
+                        <div class="price">₹799</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="arr.jpg" alt="Arrabbiata">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Arrabbiata</div>
+                        <div class="price">₹649</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="carbo.jpg" alt="Carbonara">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Carbonara</div>
+                        <div class="price">₹749</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="salmon.jpg" alt="Grilled Salmon">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Grilled Salmon</div>
+                        <div class="price">₹1099</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="butter.jpg" alt="Butter Chicken">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Butter Chicken</div>
+                        <div class="price">₹799</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="vegb.jpg" alt="Veg Biryani">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Veg Biryani</div>
+                        <div class="price">₹649</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="pan.png" alt="Paneer Tikka">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Paneer Tikka</div>
+                        <div class="price">₹599</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="cae.jpg" alt="Caesar Salad">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Caesar Salad</div>
+                        <div class="price">₹449</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="gre.jpg" alt="Greek Salad">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Greek Salad</div>
+                        <div class="price">₹499</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="lava.jpg" alt="Lava Cake">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Lava Cake</div>
+                        <div class="price">₹349</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+            <article class="item">
+                <img src="gulab.jpg" alt="Gulab Jamun">
+                <div class="pad">
+                    <div class="row">
+                        <div class="name">Gulab Jamun</div>
+                        <div class="price">₹199</div>
+                    </div>
+                    <div class="small">House favorite crafted with seasonal ingredients.</div>
+                    <a class="btn" style="width:max-content;margin-top:6px" href="#">Add to Order</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="wrap">© 2025 Lovely Moon — Designed by <strong>Parani Bala M</strong></div>
+    </footer>
+</body>
+
+</html>
+
+Administration.html
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lovely — Administration</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+  <header class="nav">
+    <div class="wrap inner">
+      <div class="brand">Lovely Moon</div>
+      <nav class="links">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <h2 class="section-title">Administration</h2>
+    <p class="small" style="margin-bottom:12px">Meet the core team behind the flavor and the service.</p>
+
+    <section class="menu-grid">
+      <article class="item">
+        <img src="sanji.jpg" alt="Head Chef">
+        <div class="pad">
+          <div class="row">
+            <div class="name">Mr. Vinsmoke Sanji</div>
+            <div class="small">Head Chef</div>
+          </div>
+          <div class="small">Leads the kitchen, menu R&D, and training.</div>
+        </div>
+      </article>
+
+      <article class="item">
+        <img src="koruyim.jpg" alt="Assistant Chef">
+        <div class="pad">
+          <div class="row">
+            <div class="name">Ms. Ko Yu Rim</div>
+            <div class="small">Asst Chef</div>
+          </div>
+          <div class="small">Runs prep, quality checks, and line coordination.</div>
+        </div>
+      </article>
+
+      <article class="item">
+        <img src="luffy.jpg" alt="Restaurant Manager">
+        <div class="pad">
+          <div class="row">
+            <div class="name">Mr. Luffy Taro</div>
+            <div class="small">Restaurant Manager</div>
+          </div>
+          <div class="small">Guest experience, floor operations, and events.</div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2025 Lovely Moon — Designed by <strong>Parani Bala M</strong></div>
+  </footer>
+</body>
+
+</html>
+
+contact.html
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lovely Moon — Contact</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <header class="nav">
+        <div class="wrap inner">
+            <div class="brand">Lovely Moon</div>
+            <nav class="links">
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="administration.html">Administration</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
     </header>
 
-    <section style="padding: 20px; text-align: center;">
-        <h2 style="font-size: 2rem;">About Us</h2>
-        <p>Welcome to Little Lemon Restaurant, where culinary delights meet a cozy ambiance. We serve the finest ingredients, beautifully crafted into dishes that inspire.</p>
-    </section>
-
-    <section style="padding: 20px; text-align: center;">
-        <h2 style="font-size: 2rem;">Our Menu</h2>
-        <div style="display: flex; justify-content: space-around; flex-wrap: nowrap; max-width: 900px; margin: auto;">
-            
-            <div style="width: 250px; padding: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin: 10px;">
-                <h3>Tasting Menu 1</h3>
-                <p>Starter: Lemon Bruschetta</p>
-                <img src="lemonbru.png" alt="Lemon Bruschetta" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p>Main: Seared Salmon</p>
-                <img src="seared_salmon.png" alt="Seared Salmon" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p>Dessert: Lemon Tart</p>
-                <img src="lemon tart.png" alt="Lemon Tart" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p style="margin-top: 20px; font-size: 0.8rem; color: #666;">*Allergens: gluten, seafood</p>
-            </div>
-
-            <div style="width: 250px; padding: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin: 10px;">
-                <h3>Tasting Menu 2</h3>
-                <p>Starter: Caesar Salad</p>
-                <img src="caesarsalad.png" alt="Caesar Salad" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p>Main: Ribeye Steak</p>
-                <img src="ribeye.png" alt="Ribeye Steak" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p>Dessert: Chocolate Mousse</p>
-                <img src="Chocolate_mouse.png" alt="Chocolate Mousse" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p style="margin-top: 20px; font-size: 0.8rem; color: #666;">*Allergens: dairy, eggs</p>
-            </div>
-
-            <div style="width: 250px; padding: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; margin: 10px;">
-                <h3>Tasting Menu 3</h3>
-                <p>Starter: Stuffed Mushrooms</p>
-                <img src="SuffedMushroom.png" alt="Stuffed Mushrooms" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p>Main: Grilled Chicken</p>
-                <img src="grilled chicken.png" alt="Grilled Chicken" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p>Dessert: Cheesecake</p>
-                <img src="lemoncheesecake.png" alt="Cheesecake" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 4px;">
-                <p style="margin-top: 20px; font-size: 0.8rem; color: #666;">*Allergens: dairy, nuts</p>
-            </div>
+    <section class="hero" style="min-height:48vh">
+        <img src="assets/images/con.jpg" alt="Contact hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <span class="badge">We'd love to hear from you</span>
+            <h1>Contact & Reservations</h1>
+            <p class="subtitle">Questions, events, or bookings — drop us a line.</p>
         </div>
     </section>
 
-    <section style="padding: 40px; text-align: center; background-color: #f1f1f1;">
-        <h2>Contact Us</h2>
-        <p>Address: Little Lemon, 19/20 Royal Hibernian Way, Duke Lane Upper, Dublin 2 Dublin 2, Dublin, D02 K772, Ireland</p>
-        <p>Phone: (312) 938-7229</p>
-        <p>Email: hello@littlelemon.com</p>
-        <p>Open Hours: 06:00 pm - 10:00 pm</p>
-    </section>
+    <main class="wrap section">
+        <div class="grid3">
+            <div class="card">
+                <h3>Address</h3>
+                <p class="small">Lovely Moon, 21 MG Road, Indiranagar<br>Bengaluru, Karnataka 560038, India</p>
+                <h3>Hours</h3>
+                <p class="small">Mon–Sun: 11:30–22:30</p>
+            </div>
+            <div class="card">
+                <h3>Contact</h3>
+                <p class="small"><strong>Phone:</strong> <a href="tel:+918045001234">+91 80450 01234</a></p>
+                <p class="small"><strong>Email:</strong> <a
+                        href="mailto:reservations@lovelymoon.example">reservations@lovelymoon.example</a></p>
+            </div>
+            <div class="card">
+                <h3>Social</h3>
+                <p class="small">Instagram • Facebook • Maps</p>
+                <p class="small">Follow for specials and events.</p>
+            </div>
+        </div>
 
-    <footer style="background-color: #d2f703; color: #120202; text-align: center; padding: 10px;">
-        <p>&copy; 2024 Little Lemon Restaurant. All Rights Reserved.</p>
+        <div class="card" style="margin-top:16px">
+            <h3 style="margin:0 0 8px">Send us a message</h3>
+            <form onsubmit="event.preventDefault(); alert('Thanks! We will get back to you soon.');">
+                <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;gap:12px">
+                    <p><input placeholder="Name"
+                            style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--ink)">
+                    </p>
+                    <p><input placeholder="Email" type="email"
+                            style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--ink)">
+                    </p>
+                    <p><input placeholder="Phone"
+                            style="width:100%;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--ink)">
+                    </p>
+                </div>
+                <p><textarea placeholder="Message"
+                        style="width:100%;min-height:140px;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:var(--ink)"></textarea>
+                </p>
+                <p><button class="btn primary" type="submit">Send</button></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">© 2025 Lovely Moon — Designed by <strong>Parani Bala M</strong></div>
     </footer>
-
 </body>
+
 </html>
+
 ```
 
-
 ## OUTPUT:
+<img width="1085" height="617" alt="Screenshot 2025-11-20 101903" src="https://github.com/user-attachments/assets/db12b12f-2dab-4dae-a794-aa4284fd4910" />
 
-![image](https://github.com/user-attachments/assets/8d66115f-7e19-4f32-a88f-ec591645b266)
+<img width="1130" height="622" alt="Screenshot 2025-11-20 101915" src="https://github.com/user-attachments/assets/73d9444a-3cad-424f-880b-35b16ab49bb8" />
 
-![image](https://github.com/user-attachments/assets/ec849b92-1b40-4dba-a437-5d1933f2ffbf)
+<img width="1089" height="612" alt="Screenshot 2025-11-20 101924" src="https://github.com/user-attachments/assets/5027a965-5e24-4bcf-a101-6fa37d40c4b6" />
 
-![image](https://github.com/user-attachments/assets/634d6415-c7da-47d2-8123-8ac9fff418f2)
+<img width="1102" height="585" alt="Screenshot 2025-11-20 101934" src="https://github.com/user-attachments/assets/a53d9496-eada-4447-bea1-4fdca7140f55" />
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
